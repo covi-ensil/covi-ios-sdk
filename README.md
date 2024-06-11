@@ -140,7 +140,7 @@ func coviEventHandler(event:String) {
 <br/>
 
 ## COVI 플레이어 로드
-- `viewDidLoad`에서 COVI 옵션을 설정한 뒤 `viewDidLoad`나 `viewDidAppear`에서 COVI 플레이어를 로드합니다.
+- `viewDidLoad`에서 COVI 옵션을 설정한 뒤 `viewDidAppear`에서 COVI 플레이어를 로드합니다.
 
 ```swift
 override func viewDidLoad() {
@@ -148,9 +148,6 @@ override func viewDidLoad() {
 
     // COVI 옵션 설정
     setCoviOpts()
-    
-    // COVI 플레이어 로드
-    coviPlayer.loadContent(coviEventHandler: coviEventHandler)
 }
 ```
 
